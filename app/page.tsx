@@ -120,7 +120,7 @@ export default function Home() {
           <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-3 text-center sm:text-left">Проекты</h3>
           <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
             <li>
-              <strong className="text-cyan-400">Auction Website</strong> — адаптивный сайт по макету Figma (HTML, CSS, Flexbox)
+              <a href="https://meditation-swart.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Meditation</a> — приложение для медитации на React
             </li>
             <li>
               <strong className="text-cyan-400">Weather App</strong> — React + OpenWeather API
