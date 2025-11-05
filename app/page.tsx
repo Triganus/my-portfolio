@@ -126,7 +126,7 @@ export default function Home() {
               <a href="https://selenurtrade.com/index.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">СеленЮР-трейд</a> — готовый проект по заказу, интернет-магазин автозапчастей (уже работает на своего заказчика)
             </li>
             <li>
-              <strong className="text-cyan-400">Portfolio Page</strong> — персональный сайт на Next.js (этот)
+              <a href="https://stellar-burgers-ecru.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Stellar Burgers</a> — онлайн-заказ бургеров, React приложение
             </li>
           </ul>
         </div>
