@@ -6,6 +6,11 @@ const orbitron = Orbitron({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata = {
   title: "Pavel Bosyy — Frontend Developer",
   description: "Frontend Developer Portfolio — React / Next.js / TypeScript",
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

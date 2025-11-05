@@ -15,15 +15,15 @@ import {
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center text-center px-6 bg-gradient-to-b from-gray-950 to-black">
+    <main className="min-h-screen flex flex-col items-center justify-center text-center px-4 sm:px-6 py-8 sm:py-12 bg-gradient-to-b from-gray-950 to-black">
       {/* Фотография */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
-        className="relative mb-8"
+        className="relative mb-6 sm:mb-8"
       >
-        <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-cyan-400/50 shadow-[0_0_30px_rgba(34,211,238,0.6)] hover:shadow-[0_0_40px_rgba(34,211,238,0.8)] transition-all duration-300 hover:scale-105">
+        <div className="relative w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-2 sm:border-4 border-cyan-400/50 shadow-[0_0_20px_rgba(34,211,238,0.5)] sm:shadow-[0_0_30px_rgba(34,211,238,0.6)] hover:shadow-[0_0_40px_rgba(34,211,238,0.8)] transition-all duration-300 hover:scale-105">
           <Image
             src="/photo.jpg"
             alt="Павел Босый"
@@ -41,7 +41,7 @@ export default function Home() {
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-6xl font-bold text-cyan-400 mb-3 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)]"
+        className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-400 mb-2 sm:mb-3 drop-shadow-[0_0_15px_rgba(34,211,238,0.5)] px-2"
       >
         ПАВЕЛ БОСЫЙ
       </motion.h1>
@@ -50,9 +50,13 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="text-xl text-gray-400 mb-10 tracking-widest"
+        className="text-sm sm:text-base md:text-lg lg:text-xl text-gray-400 mb-6 sm:mb-8 md:mb-10 tracking-widest px-2"
       >
-        FRONTEND DEVELOPER • REACT • NEXT.JS • TYPESCRIPT
+        <span className="block sm:inline">FRONTEND DEVELOPER</span>
+        <span className="hidden sm:inline"> • </span>
+        <span className="block sm:inline sm:block md:inline">REACT • NEXT.JS</span>
+        <span className="hidden md:inline"> • </span>
+        <span className="block md:inline">TYPESCRIPT</span>
       </motion.h2>
 
       {/* Кнопка скачать резюме */}
@@ -62,10 +66,10 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.7 }}
-        className="flex items-center gap-2 bg-cyan-500 text-black font-semibold px-5 py-3 rounded-full hover:shadow-[0_0_15px_rgba(34,211,238,0.7)] hover:scale-105 transition mb-12"
+        className="flex items-center justify-center gap-2 bg-cyan-500 text-black font-semibold px-4 sm:px-5 py-2.5 sm:py-3 rounded-full hover:shadow-[0_0_15px_rgba(34,211,238,0.7)] hover:scale-105 transition mb-8 sm:mb-12 text-sm sm:text-base"
       >
-        <Download size={20} />
-        Скачать резюме (PDF)
+        <Download size={18} className="sm:w-5 sm:h-5" />
+        <span className="whitespace-nowrap">Скачать резюме (PDF)</span>
       </motion.a>
 
       {/* Социальные ссылки */}
@@ -73,16 +77,16 @@ export default function Home() {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
-        className="flex gap-6 mb-16"
+        className="flex gap-4 sm:gap-6 mb-10 sm:mb-16"
       >
         <a href="https://github.com/Triganus" target="_blank" className="hover:text-cyan-400 transition">
-          <Github size={28} />
+          <Github size={24} className="sm:w-7 sm:h-7" />
         </a>
         <a href="mailto:pavelbosy452@gmail.com" className="hover:text-cyan-400 transition">
-          <Mail size={28} />
+          <Mail size={24} className="sm:w-7 sm:h-7" />
         </a>
         <a href="https://t.me/Triganusnikus2312" target="_blank" className="hover:text-cyan-400 transition">
-          <Send size={28} />
+          <Send size={24} className="sm:w-7 sm:h-7" />
         </a>
       </motion.div>
 
@@ -91,10 +95,10 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
-        className="max-w-4xl text-left mb-16"
+        className="max-w-4xl w-full text-left mb-10 sm:mb-16 px-2"
       >
-        <h3 className="text-2xl font-semibold text-cyan-400 mb-6 text-center">Навыки</h3>
-        <div className="grid grid-cols-3 sm:grid-cols-4 gap-8 justify-items-center text-gray-300">
+        <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-4 sm:mb-6 text-center">Навыки</h3>
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center text-gray-300">
           <Skill icon={<SiHtml5 color="#e34f26" />} label="HTML5" />
           <Skill icon={<SiCss3 color="#1572B6" />} label="CSS3" />
           <Skill icon={<SiJavascript color="#f7df1e" />} label="JavaScript" />
@@ -110,11 +114,11 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.3 }}
-        className="max-w-3xl text-left space-y-8"
+        className="max-w-3xl w-full text-left space-y-6 sm:space-y-8 px-4"
       >
         <div>
-          <h3 className="text-2xl font-semibold text-cyan-400 mb-3">Проекты</h3>
-          <ul className="space-y-3 text-gray-300">
+          <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-3 text-center sm:text-left">Проекты</h3>
+          <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
             <li>
               <strong className="text-cyan-400">Auction Website</strong> — адаптивный сайт по макету Figma (HTML, CSS, Flexbox)
             </li>
@@ -128,10 +132,12 @@ export default function Home() {
         </div>
 
         <div>
-          <h3 className="text-2xl font-semibold text-cyan-400 mb-3">Контакты</h3>
-          <p className="text-gray-300">
-            📧 pavelbosy452@gmail.com  
-            💬 Telegram: <a href="https://t.me/Triganusnikus2312" target="_blank" className="text-cyan-400 hover:underline">@Triganusnikus2312</a>
+          <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-3 text-center sm:text-left">Контакты</h3>
+          <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
+            <span className="block sm:inline mb-1 sm:mb-0">📧 pavelbosy452@gmail.com</span>
+            <span className="hidden sm:inline">  </span>
+            <br className="sm:hidden" />
+            <span className="block sm:inline">💬 Telegram: <a href="https://t.me/Triganusnikus2312" target="_blank" className="text-cyan-400 hover:underline break-all">@Triganusnikus2312</a></span>
           </p>
         </div>
       </motion.section>
@@ -141,9 +147,9 @@ export default function Home() {
 
 function Skill({ icon, label }: { icon: React.ReactNode; label: string }) {
   return (
-    <div className="flex flex-col items-center gap-2 group">
-      <div className="text-4xl group-hover:scale-110 transition-transform">{icon}</div>
-      <span className="text-sm text-gray-400">{label}</span>
+    <div className="flex flex-col items-center gap-1 sm:gap-2 group">
+      <div className="text-2xl sm:text-3xl md:text-4xl group-hover:scale-110 transition-transform">{icon}</div>
+      <span className="text-xs sm:text-sm text-gray-400">{label}</span>
     </div>
   );
 }
