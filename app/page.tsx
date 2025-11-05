@@ -123,7 +123,7 @@ export default function Home() {
               <a href="https://meditation-swart.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Meditation</a> — приложение для медитации на React
             </li>
             <li>
-              <strong className="text-cyan-400">Weather App</strong> — React + OpenWeather API
+              <a href="https://selenurtrade.com/index.html" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">СеленЮР-трейд</a> — готовый проект по заказу, интернет-магазин автозапчастей (уже работает на своего заказчика)
             </li>
             <li>
               <strong className="text-cyan-400">Portfolio Page</strong> — персональный сайт на Next.js (этот)
