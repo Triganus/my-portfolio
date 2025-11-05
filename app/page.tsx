@@ -134,7 +134,9 @@ export default function Home() {
         <div>
           <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-3 text-center sm:text-left">Контакты</h3>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
-            <span className="block sm:inline mb-1 sm:mb-0">📧 pavelbosy452@gmail.com</span>
+            <span className="block sm:inline mb-1 sm:mb-0">📧 <a href="mailto:pavelbosy452@gmail.com" className="text-cyan-400 hover:underline">pavelbosy452@gmail.com</a></span>
+            <span className="hidden sm:inline">  </span>
+            <span className="block sm:inline mb-1 sm:mb-0">📧 <a href="mailto:triganus2312000@gmail.com" className="text-cyan-400 hover:underline">triganus2312000@gmail.com</a></span>
             <span className="hidden sm:inline">  </span>
             <br className="sm:hidden" />
             <span className="block sm:inline">💬 Telegram: <a href="https://t.me/Triganusnikus2312" target="_blank" className="text-cyan-400 hover:underline break-all">@Triganusnikus2312</a></span>
