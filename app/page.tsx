@@ -142,7 +142,7 @@ export default function Home() {
             <span className="block sm:inline mb-1 sm:mb-0">📧 <a href="mailto:triganus2312000@gmail.com" className="text-cyan-400 hover:underline">triganus2312000@gmail.com</a></span>
             <span className="hidden sm:inline">  </span>
             <br className="sm:hidden" />
-            <span className="block sm:inline">💬 Telegram: <a href="https://t.me/Triganusnikus2312" target="_blank" className="text-cyan-400 hover:underline break-all">@Triganusnikus2312</a></span>
+            <span className="block sm:inline whitespace-nowrap">💬 Telegram: <a href="https://t.me/Triganusnikus2312" target="_blank" className="text-cyan-400 hover:underline">@Triganusnikus2312</a></span>
           </p>
         </div>
       </motion.section>
