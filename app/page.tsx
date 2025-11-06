@@ -128,6 +128,9 @@ export default function Home() {
             <li>
               <a href="https://stellar-burgers-ecru.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Stellar Burgers</a> — онлайн-заказ бургеров, React приложение
             </li>
+            <li>
+              <a href="https://triganus.github.io/web-larek-frontend/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Web Larek</a> — интернет-магазин магических товаров для веб-разработчиков, TypeScript, паттерн MVP с событийным обменом
+            </li>
           </ul>
         </div>
 
