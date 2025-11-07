@@ -131,6 +131,9 @@ export default function Home() {
             <li>
               <a href="https://triganus.github.io/web-larek-frontend/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Web Larek</a> — интернет-магазин магических товаров для веб-разработчиков, TypeScript, паттерн MVP с событийным обменом
             </li>
+            <li>
+              <a href="https://triganus.github.io/online-store/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">IMODA Store</a> — онлайн-магазин одежды с фильтрами, сортировкой и оформлением заказа
+            </li>
           </ul>
         </div>
 
