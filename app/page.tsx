@@ -134,6 +134,9 @@ export default function Home() {
             <li>
               <a href="https://triganus.github.io/online-store/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">IMODA Store</a> — онлайн-магазин одежды с фильтрами, сортировкой и оформлением заказа
             </li>
+            <li>
+              <a href="https://triganus.github.io/drawing-lots/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Drawing Lots</a> — приложение для выбора случайного участника (жеребьевка) с анимацией и звуковым сопровождением
+            </li>
           </ul>
         </div>
 
