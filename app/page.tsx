@@ -120,6 +120,9 @@ export default function Home() {
           <h3 className="text-xl sm:text-2xl font-semibold text-cyan-400 mb-3 text-center sm:text-left">Проекты</h3>
           <ul className="space-y-2 sm:space-y-3 text-gray-300 text-sm sm:text-base">
             <li>
+              <a href="https://skill-swap-40-2.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Skill Swap</a> — платформа для обмена навыками, React приложение
+            </li>
+            <li>
               <a href="https://meditation-swart.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline font-semibold">Meditation</a> — приложение для медитации на React
             </li>
             <li>
